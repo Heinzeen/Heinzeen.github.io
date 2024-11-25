@@ -3,12 +3,18 @@ layout: default
 home: true
 ---
 
-<h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
-{%- for post in site.posts limit: site.number_of_posts -%}
-<article class="post-item">
-  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
-  <h4 class="post-item-title">
-    <a href="{{ post.url }}">{{ post.title | escape }}</a>
-  </h4>
-</article>
-{%- endfor -%}
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<center>
+  <a href="https://github.com/Heinzeen"><i class="fa-brands fa-github" style="font-size:40px"></i></a>
+  <a href="https://scholar.google.com/citations?hl=en&user=A2SKREIAAAAJ"><i class="fa-brands fa-google-scholar" style="font-size:40px"></i></a>
+  <a href="https://www.linkedin.com/in/matteo-marini-88b58a1b3/"><i class="fa-brands fa-linkedin" style="font-size:40px"></i></a>
+
+</center>
+
+<h3>Publications:</h3>
+<ul>
+  <li>"QMSan: Efficiently Detecting Uninitialized Memory Errors During Fuzzing", Matteo Marini, Daniele Cono D'Elia, Mathias Payer, and Leonardo Querzoni. To appear at NDSS 2025</li>
+  <li>D’Elia, Daniele Cono, Simone Nicchi, Matteo Mariani, Matteo Marini, and Federico Palmaro. "Designing robust API monitoring solutions." IEEE Transactions on Dependable and Secure Computing 20, no. 1 (2021): 392-406.</li>
+</ul>
+
